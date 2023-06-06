@@ -24,3 +24,269 @@ h5,
 h6 {
     font-family: "sora", "san-serif";
 }
+/* Common CSS */
+
+.content {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(100% - 48px);
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    --height: 56px;
+    display: inline-block;
+    min-width: 193px;
+    height: var(--height);
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: calc(var(--height) - 1px);
+    border-radius: 999px;
+    border: 2px solid rgb(0, 9, 88, 0.7);
+    text-align: center;
+    color: #000958;
+}
+.row {
+    display: flex;
+    align-items: center;
+}
+
+/* ================Header CSS=========== */
+.header {
+    position: sticky;
+    top: -10px;
+    padding-top: 16px;
+    z-index: 10;
+    background-color: #fff;
+    padding-bottom: 10px;
+}
+.header-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list--nav {
+    display: flex;
+    align-items: center;
+}
+.header--item--nav {
+    padding: 10px 18px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #5e6085;
+    transition: ease 0.2s;
+}
+.header--item--nav:hover {
+    color: #000958;
+    text-shadow: 1px 0 0 currentColor;
+}
+.btn--nav {
+    min-width: 117px;
+    transition: ease 0.3s;
+}
+.btn--nav:hover {
+    color: #fff;
+    background-color: #000958;
+}
+/* ==============Hero CSS============= */
+.hero {
+    margin-top: 90px;
+}
+.hero--block {
+    display: flex;
+}
+.hero--block--left {
+    width: 33.2%;
+}
+
+.hero--block--right {
+    flex: 1;
+}
+.hero--left-info {
+    width: 388px;
+    height: 488px;
+    border-radius: 16px;
+}
+.hero-img {
+    position: relative;
+}
+.hero--left-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    background-color: #fe997b;
+}
+.hero--block--right {
+    margin-top: 71px;
+    margin-left: 282px;
+}
+.hero--block--right--title {
+    font-weight: 800;
+    font-size: 6.6rem;
+    line-height: 1.15;
+    color: #000958;
+}
+.hero--block--right--desc {
+    width: 391px;
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #656689;
+}
+.row__hero {
+    margin-top: 38px;
+}
+.btn--hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 10px;
+    min-width: 189px;
+    height: 60px;
+    border: 2px solid rgb(255, 91, 46, 0.7);
+    color: #ff5b2e;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+    transition: ease 0.3s;
+}
+.btn--hero:hover {
+    color: #fff;
+    background-color: #ff5b2e;
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
+.btn--hero::after {
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ff5b2e;
+    transition: 0.3s;
+}
+.btn--hero::before {
+    position: absolute;
+    top: 26px;
+    left: 144px;
+    display: inline-block;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    rotate: -135deg;
+    transition: 0.3s;
+}
+.btn--hero:hover .btn--hero::before {
+}
+.btn--hero:hover::after {
+    background-color: #fff;
+}
+.btn--hero:hover::before {
+    box-shadow: 4px 3px 10px -1px rgba(191, 41, 0, 0.4);
+    border-left: 1px solid #ff5b2e;
+    border-bottom: 1px solid #ff5b2e;
+}
+.hero--action {
+    margin-left: 12px;
+    display: inline-block;
+    padding: 8px 12px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1;
+    text-align: center;
+    color: #000958;
+}
+.hero--action:hover {
+    text-decoration-line: underline;
+}
+.hero--info-pets {
+    position: absolute;
+    bottom: -92px;
+    right: 10px;
+    height: 156px;
+    width: 250px;
+    padding: 18px 14px;
+    box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+    border-radius: 10px;
+    background: #fff;
+    z-index: 2;
+}
+.hero--info--item {
+    display: flex;
+    align-items: center;
+}
+.info--item--img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: #fec23f;
+}
+.info--item--img:last-child {
+    background-color: #c6e2fa;
+}
+.name--item {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #181e52;
+}
+.info--about--item {
+    margin-left: 11px;
+}
+.info--item--taskbar-1,
+.info--item--taskbar-2 {
+    margin-top: 7px;
+    width: 118px;
+    height: 4px;
+    background: #000958;
+    opacity: 0.08;
+    border-radius: 10px;
+}
+.info--item--taskbar-2 {
+    margin-top: 6px;
+    width: 39px;
+}
+.hero--br {
+    width: 100%;
+    height: 2px;
+    background: #000958;
+    opacity: 0.08;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+.second--block--img {
+    position: absolute;
+    bottom: -62px;
+    right: -163px;
+    width: 186px;
+    height: 244px;
+    border-radius: 16px;
+    z-index: 1;
+}
+.secondary--img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    background-color: #faa7ad;
+}
+.circle--hero {
+    position: absolute;
+    bottom: 0;
+    left: -60px;
+    z-index: -1;
+}
+.tabbar--hero {
+    position: absolute;
+    top: 20px;
+    right: -50px;
+}
