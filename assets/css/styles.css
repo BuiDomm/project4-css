@@ -290,3 +290,286 @@ a {
     top: 20px;
     right: -50px;
 }
+/* ============About CSS=============== */
+
+.about {
+    margin-top: 300px;
+}
+.about--catalog {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #5e6085;
+}
+.about-block {
+    display: flex;
+}
+.about--title {
+    margin-top: 15px;
+    width: 446px;
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 1.19;
+    color: #000958;
+}
+.about--desc {
+    width: 431px;
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #656689;
+}
+.about--form {
+    width: 477px;
+    margin-top: 54px;
+}
+.row-about {
+    /* gap: 0 36px; */
+    margin-bottom: 34px;
+}
+.about--input {
+    display: none;
+}
+.about--left--block {
+    width: 40.78%;
+}
+
+.about--lable {
+    position: relative;
+    display: flex;
+    width: 223px;
+    align-items: center;
+    gap: 0 10px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #48496a;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+.about--lable:hover {
+    cursor: pointer;
+}
+.about--form .about--lable::before,
+.about--form .about--lable::after {
+    display: inline-block;
+    content: "";
+}
+.about--form .about--lable::before {
+    width: 24px;
+    height: 24px;
+    background: #ff5d31;
+    border-radius: 4px;
+}
+.about--form .about--lable::after {
+    display: none;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 12px;
+    height: 5px;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    rotate: -45deg;
+    transition: 0.3s;
+}
+.about--form .about--input:checked + .about--lable::after {
+    display: block;
+}
+.about--lable:last-child {
+    margin-left: 36px;
+}
+.about--right--block {
+    width: 55%;
+}
+.right--block {
+    position: relative;
+    margin-top: 120px;
+    margin-left: 200px;
+    width: 494px;
+    height: 336px;
+    background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+    border-radius: 16px;
+}
+.img--about {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.about--year {
+    position: absolute;
+    top: -60px;
+    left: -92px;
+    padding: 31px 26px 29px 26px;
+    width: 136px;
+    height: 156px;
+    background: #5bd6e2;
+    box-shadow: -15px 26px 48px rgba(85, 240, 255, 0.17);
+    border-radius: 10px;
+    text-align: center;
+}
+.year--title {
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 1;
+    color: #ffffff;
+}
+.year--desc {
+    margin-top: 14px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.43rem;
+    color: #c6f4f9;
+}
+.about--hintCat {
+    position: absolute;
+    top: -39px;
+    right: -39px;
+}
+.about--background {
+    position: absolute;
+    top: -60px;
+    right: -60px;
+}
+/* ===============Info CSS================ */
+.info {
+    margin-top: 156px;
+}
+.info-block {
+    display: flex;
+    gap: 0 127px;
+}
+.info--images {
+    position: relative;
+    min-width: 39.15%;
+    height: 500px;
+    background: linear-gradient(180deg, #c6e2fa 0%, #94c2ea 100%);
+    border: 2px solid #ffffff;
+    box-shadow: 0px 17px 77px -8px rgba(190, 165, 139, 0.17);
+    border-radius: 18px;
+}
+
+.info--img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.info--circle {
+    position: absolute;
+    bottom: -54px;
+    right: -54px;
+}
+.info--tangle {
+    position: absolute;
+    bottom: 50%;
+    right: -40px;
+}
+.info--jun-1 {
+    position: absolute;
+    top: -15px;
+    right: 2px;
+}
+.info--jun-2 {
+    position: absolute;
+    top: 23px;
+    right: -26px;
+}
+.info--jun-3 {
+    position: absolute;
+    top: 5px;
+    right: 43px;
+}
+.info--more {
+    margin-top: 28px;
+}
+.info--title {
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 1.19;
+    color: #000958;
+}
+.info-desc {
+    width: 511px;
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #656689;
+}
+.manger--title {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1;
+
+    color: #48496a;
+}
+.img--manger {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+.info--manger-block {
+    /* width: 48%; */
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.manger--pet {
+    flex: 1;
+}
+.manger--pet--hr {
+    margin-top: 10px;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 91, 46, 0.07);
+}
+.manger--title:hover + .manger--pet--hr {
+    background-color: rgb(255, 91, 46);
+    animation: animate_2 2.5s ease-in-out infinite;
+}
+.manger--title:hover {
+    cursor: pointer;
+}
+.info--more--desc {
+    width: 391px;
+    margin-top: 36px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.71;
+    color: #656689;
+}
+.more--info--cta {
+    display: inline-block;
+    margin-top: 32px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #000958;
+    transition: ease 2s;
+}
+.more--info--cta:hover {
+    text-decoration: underline;
+    color: #ff5d31;
+}
+
+@keyframes animate_2 {
+    0% {
+        width: 0;
+        transform: translateX(0px);
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        width: 100%;
+        /* transform: translateX(194px); */
+        filter: hue-rotate(180deg);
+    }
+}
