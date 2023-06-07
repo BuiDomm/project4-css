@@ -1087,6 +1087,9 @@ a {
     background: #90ccff;
     border-radius: 24px;
 }
+.blog--body--column {
+    transition: ease 0.3s;
+}
 .blog--body--column:nth-child(2) .blog--body--item::before {
     background: #ff997e;
 }
@@ -1097,7 +1100,7 @@ a {
     position: relative;
 }
 .blog--block--body {
-    margin-top: 54px;
+    margin-top: 74px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0 48px;
@@ -1132,6 +1135,10 @@ a {
     font-size: 1.4rem;
     line-height: 1.71;
     color: #656689;
+}
+.blog--body--column:hover {
+    cursor: pointer;
+    transform: translateY(-15px);
 }
 /* Animation CSS */
 @keyframes animate_2 {
