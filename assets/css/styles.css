@@ -5,9 +5,18 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
+:root {
+}
+.clip--text {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 3);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 body {
     font-size: 1.6rem;
     font-family: "Poppins", "san-serif";
+    background: #fffaf5;
 }
 input,
 select,
@@ -560,6 +569,221 @@ a {
     color: #ff5d31;
 }
 
+/*================== Service CSS=============== */
+.services {
+    margin-top: 180px;
+    background: #fff6ed;
+    padding: 68px 0 100px 0;
+}
+
+.services--top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.services--sub-title {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #5e6085;
+}
+.services--main--title {
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 1.19;
+    color: #000958;
+}
+/* Services body */
+.services--body {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 65px;
+    margin-top: 70px;
+}
+.services--item {
+    padding: 30px 22px 30px 28px;
+    background: #ffffff;
+    border: 2px solid rgba(255, 188, 122, 0.26);
+    border-radius: 10px;
+}
+.services--item + .services--item {
+    margin-top: 24px;
+}
+.services--item--title::before {
+    display: inline-block;
+    content: "";
+    height: 22px;
+    width: 2px;
+    background: linear-gradient(180deg, #ff5b2e 0%, #ffa187 100%);
+}
+.services--block-img {
+    position: relative;
+    margin-top: 243px;
+    width: 410px;
+    height: 350px;
+    background: linear-gradient(180deg, #9df1fb 0%, #73d0db 108.14%);
+    border-radius: 10px;
+}
+.services--img {
+    position: absolute;
+    bottom: 0;
+    left: -13px;
+}
+.services--item--title {
+    display: flex;
+    align-items: center;
+    gap: 0 12px;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1;
+    color: #000958;
+}
+.services--item--desc {
+    width: 244px;
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.71;
+    color: #656689;
+}
+.services--item--cta {
+    display: inline-flex;
+    gap: 0 10px;
+    align-items: center;
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1;
+    font-family: "Sora";
+    color: #34396a;
+}
+.services--item--cta:hover {
+    text-decoration: underline;
+    color: #ff5b2e;
+}
+.btn--services {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 58px;
+    min-width: 214px;
+    color: #ff5b2e;
+    border: 1px solid #ff5b2e;
+    border-radius: 31px;
+    transition: ease-in-out 0.3s;
+}
+.btn--services:hover {
+    color: #fff;
+    background-color: #ff5b2e;
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
+/* =================Member CSS=============== */
+.member {
+    padding: 130px 0;
+}
+.member--top {
+    text-align: center;
+}
+.member--sub-title {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #5e6085;
+}
+.memmber--title {
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 1.19;
+    color: #000958;
+}
+.member--body {
+    margin-top: 59px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 35px;
+}
+.img--member--item {
+    display: block;
+    position: relative;
+    width: 100%;
+    /* margin: 0 16px; */
+    border-radius: 129.5px;
+    z-index: 5;
+}
+.member--item {
+    display: block;
+    position: relative;
+    margin: 0 16px;
+}
+.member--item::before {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 94%;
+    background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
+    border-radius: 129.5px;
+}
+.member--item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: calc(100% + 36px);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+}
+.staff--item:nth-child(1) .member--item::after {
+    background-image: url(../img/decor1.svg);
+}
+.staff--item:nth-child(2) .member--item::after {
+    background-image: url(../img/decor2.svg);
+}
+.staff--item:nth-child(3) .member--item::after {
+    background-image: url(../img/decor3.svg);
+}
+.staff--item:nth-child(4) .member--item::after {
+    background-image: url(../img/decor4.svg);
+}
+.staff--item:nth-child(even) .member--item::after {
+    background-position: top;
+}
+.staff--item:nth-child(2) .member--item::before {
+    background: linear-gradient(180deg, #ff997e 0%, #f3752e 100%);
+    border-radius: 129.5px;
+}
+.staff--item:nth-child(3) .member--item::before {
+    background: linear-gradient(180deg, #fabf3e 0%, #ffa14a 100%);
+}
+.staff--item:nth-child(4) .member--item::before {
+    background: linear-gradient(180deg, #5bd6e2 0%, #00a7cc 100%);
+}
+
+.title-staff {
+    margin-top: 34px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #656689;
+}
+.name--staff {
+    margin-top: 14px;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1;
+    text-align: center;
+    color: #000958;
+}
+/* Animation CSS */
 @keyframes animate_2 {
     0% {
         width: 0;
