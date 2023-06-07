@@ -542,7 +542,7 @@ a {
 }
 .manger--title:hover + .manger--pet--hr {
     background-color: rgb(255, 91, 46);
-    animation: animate_2 2.5s ease-in-out infinite;
+    animation: animate_2 1s ease-in-out forwards;
 }
 .manger--title:hover {
     cursor: pointer;
@@ -1040,6 +1040,98 @@ a {
 .list--review--item {
     display: flex;
     overflow: hidden;
+}
+/* ==================Blog CSS */
+.blog {
+    margin-top: 130px;
+}
+.blog--block--top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.blog--top--title {
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 1.19;
+    color: #000958;
+}
+.blog-sub--block {
+    width: 350px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    color: #656689;
+}
+.btn--blog {
+    margin-top: 24px;
+    color: #ff5b2e;
+    border: 1px solid #ff5b2e;
+    min-width: 186px;
+    transition: ease 0.3s;
+}
+.btn--blog:hover {
+    color: #fff;
+    background-color: #ff5b2e;
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+    border-radius: 31px;
+}
+.blog--body--item::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 107%;
+    background: #90ccff;
+    border-radius: 24px;
+}
+.blog--body--column:nth-child(2) .blog--body--item::before {
+    background: #ff997e;
+}
+.blog--body--column:nth-child(3) .blog--body--item::before {
+    background: #5bd6e2;
+}
+.blog--body--item {
+    position: relative;
+}
+.blog--block--body {
+    margin-top: 54px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 48px;
+}
+.blog--item--date {
+    position: relative;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.21;
+    margin-left: 36px;
+    color: #ffffff;
+    z-index: 10;
+}
+.blog--item--img {
+    display: block;
+    position: relative;
+    margin-top: 25px;
+    width: 90%;
+    z-index: 20;
+    margin-left: 36px;
+}
+.blog--column--title {
+    margin-top: 28px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.55;
+    color: #000958;
+}
+.blog--column--desc {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.71;
+    color: #656689;
 }
 /* Animation CSS */
 @keyframes animate_2 {
