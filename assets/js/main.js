@@ -23,10 +23,13 @@ window.addEventListener("load", () => {
     .to(
       ".section.hero",
       {
-        scale: 1.1,
+        scale: 1,
         transformOrigin: "center center",
         ease: "power1.inOut",
       },
       "<"
-    );
+    )
+    .to(".header", {
+      visibility: hidden,
+    });
 });
