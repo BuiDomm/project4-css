@@ -276,7 +276,7 @@ a {
 .second--block--img {
     position: absolute;
     bottom: -62px;
-    right: -111px;
+    right: -163px;
     width: 186px;
     height: 244px;
     border-radius: 16px;
@@ -493,7 +493,7 @@ a {
     right: 43px;
 }
 .info--more {
-    margin-top: -30px;
+    margin-top: 28px;
 }
 .info--title {
     font-weight: 700;
